@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+httpx2
+pytest
+ruff
+black
+pre-commit
