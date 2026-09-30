@@ -3,11 +3,11 @@ name: CI
 on:
   push:
      branches:
-        -main
+       - main
         
   pull_request:
      branches:
-        -main
+       - main
 
 jobs:
   test:
@@ -33,5 +33,5 @@ jobs:
       - name: Check Black formatting
         run: black --check .
 
-      - name: Run pytest
+      - name: Run Pytest
         run: pytest -v
