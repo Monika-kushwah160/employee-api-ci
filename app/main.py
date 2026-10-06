@@ -16,3 +16,8 @@ def home():
 @app.get("/employee")
 def employee():
     return {"message": "Hello !"}
+
+
+@app.get("/demo")
+def demo():
+    return {"message": "Welcome to my new blog"}

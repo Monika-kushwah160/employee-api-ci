@@ -17,3 +17,10 @@ def test_home():
 
     assert response.status_code == 200
     assert response.json() == {"message": "Welcome to my page"}
+
+
+def test_demo():
+    response = client.get("/demo")
+
+    assert response.status_code == 200
+    assert response.json() == {"message": "Welcome to my new blog"}
